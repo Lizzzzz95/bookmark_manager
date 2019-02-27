@@ -7,8 +7,8 @@ feature 'Viewing bookmarks' do
 
   scenario 'Viewing bookmarks list' do
     visit('/bookmarks')
-    expect(page).to have_content 'rubygems.org'
-    expect(page).to have_content 'youtube.com'
+    expect(page).to have_content 'http://www.makersacademy.com'
+    expect(page).to have_content 'http://www.twitter.com'
   end
 
 end
