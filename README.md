@@ -6,6 +6,10 @@ As a user,
 So that I can view what pages I visit a lot,
 I want be able to see a list of bookmarks.
 
+As a user
+So I can store bookmark data for later retrieval
+I want to add a bookmark to Bookmark Manager.
+
 ### Domain Model
 
 ![Bookmark Manager domain model](images/bookmark_manager_1.png)
