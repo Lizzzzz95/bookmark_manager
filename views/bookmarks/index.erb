@@ -1,9 +1,14 @@
 <ul>
   <% @bookmarks.each do |bookmark| %>
-    <li>
-      <a href="<%= bookmark.url %>">
+    <li class="bookmark" id="bookmark-<%= bookmark.id %>">
+      <a href="<%= bookmark.url %>" target="_blank">
+        <!-- target="_blank" redirects the a tag when clicked to a new tab/browser windows-->
         <%= bookmark.title %>
       </a>
+      <form action="/bookmarks/<%= bookmark.id %>" method="post">
+        <input type="hidden" name="_method" value="DELETE">
+        <input type="submit" value="Delete">
+      </form>
     </li>
   <% end %>
 </ul>
