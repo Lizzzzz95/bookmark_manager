@@ -3,29 +3,42 @@
     "coverage": {
       "/Users/lizziecoady/Projects/bookmark_manager/spec/bookmark_spec.rb": [
         1,
-        null,
         1,
         null,
-        1,
-        null,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
         1,
         null,
         1,
         null,
         1,
         1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
         1,
         null,
         null,
         null,
         null,
         1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
         null,
         1,
         1,
@@ -37,9 +50,18 @@
         null,
         null
       ],
+      "/Users/lizziecoady/Projects/bookmark_manager/spec/database_helpers.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        null
+      ],
       "/Users/lizziecoady/Projects/bookmark_manager/spec/features/creating_bookmarks_spec.rb": [
         1,
         null,
+        1,
         1,
         1,
         1,
@@ -78,6 +100,6 @@
         null
       ]
     },
-    "timestamp": 1551366536
+    "timestamp": 1551450860
   }
 }
