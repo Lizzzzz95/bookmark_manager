@@ -16,7 +16,7 @@ I want to delete a bookmark.
 
 ### Domain Model
 
-![Bookmark Manager domain model](images/bookmark_manager_1.png)
+![Bookmark Manager domain model](images/bookmark_manager_13.png)
 
 ### To set up the database
 
