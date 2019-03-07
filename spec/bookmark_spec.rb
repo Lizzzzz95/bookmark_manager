@@ -37,10 +37,10 @@ describe Bookmark do
       expect(bookmark.url).to eq 'http://www.testbookmark.com'
     end
 
-    it 'fails if invalid url is given' do
+    it 'does not create a new bookmark if URL is not valid' do
       bookmark = Bookmark.create(url: 'not_a_valid_url', title: 'Not A Valid URL')
 
-      expect(bookmark).to eq false
+      expect(bookmark).not_to be_a Bookmark
     end
 
   end

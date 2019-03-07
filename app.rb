@@ -1,10 +1,14 @@
 require 'sinatra/base'
+require 'sinatra/flash'
 require './lib/bookmark'
+require './lib/database_connection'
 require './database_connection_setup'
+require 'uri'
+require './spec/database_helpers'
 
 class BookmarkManager < Sinatra::Base
-
   enable :sessions, :method_override
+  register Sinatra::Flash
 
   get '/' do
     erb :index
@@ -16,13 +20,18 @@ class BookmarkManager < Sinatra::Base
     erb :'bookmarks/index'
   end
 
-  get '/bookmarks/new' do
+  post '/bookmarks' do
+    if Bookmark.create(url: params[:url], title: params[:title])
+      redirect '/bookmarks'
+    else
+      flash[:notice] = "You must submit a valid URL."
+      redirect '/bookmarks/new'
+    end
     erb :'bookmarks/new'
   end
 
-  post '/bookmarks/new' do
-    Bookmark.create(url: params[:url], title: params[:title])
-    redirect '/bookmarks'
+  get '/bookmarks/new' do
+    erb :'bookmarks/new'
   end
 
   delete '/bookmarks/:id' do

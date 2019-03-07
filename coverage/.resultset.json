@@ -93,14 +93,6 @@
         null,
         null
       ],
-      "/Users/lizziecoady/Projects/bookmark_manager/spec/database_helpers.rb": [
-        1,
-        null,
-        1,
-        1,
-        1,
-        null
-      ],
       "/Users/lizziecoady/Projects/bookmark_manager/spec/database_connection_spec.rb": [
         1,
         null,
@@ -135,6 +127,16 @@
         1,
         1,
         null,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
         1,
         null,
         null,
@@ -205,6 +207,6 @@
         null
       ]
     },
-    "timestamp": 1551638973
+    "timestamp": 1551955138
   }
 }

@@ -45,7 +45,7 @@ class Bookmark
   private
 
   def self.is_url?(url)
-    url =~ URI::regexp
+    url =~ /\A#{URI::regexp(['http', 'https'])}\z/
   end
 
 end

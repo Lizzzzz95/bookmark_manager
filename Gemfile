@@ -2,16 +2,17 @@
 
 source "https://rubygems.org"
 
-git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
-
 # gem "rails"
 
 gem 'rake'
 gem 'sinatra'
 gem 'pg'
+gem 'sinatra-flash'
+gem 'rack-flash', '0.1.2'
 
 group :test do
   gem 'capybara'
+  gem 'launchy'
   gem 'rspec'
   gem 'rspec-sinatra'
   gem 'rubocop', '0.56.0'
