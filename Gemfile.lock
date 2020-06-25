@@ -32,7 +32,7 @@ GEM
     pg (1.1.4)
     powerpack (0.1.2)
     public_suffix (3.0.3)
-    rack (2.0.8)
+    rack (2.2.3)
     rack-flash (0.1.2)
       rack
     rack-protection (2.0.5)
